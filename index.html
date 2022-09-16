@@ -1,0 +1,1384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Xchange.me - exchange crypto anonymously</title>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="author" content="Pacific Ventures LTD" />
+<meta name="robots" content="index">
+<meta name="googlebot" content="index">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Bitcoin, Altcoins, Crypto Exchange, Cryptocurrency Exchange, exchange crypto, crypto exchanger, sell monero, buy monero" />
+<meta name="description" content="Anonymous cryptocurrency exchanger, no KYC/AML, accountless." />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/css/clear/bootstrap.css">
+<link rel="stylesheet" href="/css/clear/bootstrap-select.min.css">
+<link rel="stylesheet" href="/css/clear/xchangeme.css">
+<link rel="stylesheet" href="/css/clear/cryptofont.css">
+</head>
+<body class="">
+<section class="exchange-wrapper d-flex flex-column ">
+<header class="mb-5">
+<nav class="navbar navbar-expand-lg">
+<div class="container d-flex justify-content-between">
+<a class="navbar-brand" href="/"><img src="/img/logo_clear.png" alt="Exchange cryptocurrency" /></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse order-0" id="navbarToggler">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item active">
+<a class="nav-link" href="/cli">xChange.me CLI</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/how-it-works">How it works</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/terms-of-service">ToS</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/privacy-policy">Privacy Policy</a>
+</li>
+</ul>
+</div>
+<div class="collapse navbar-collapse order-1 flex-grow-0">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link pb-0">Affiliate Program <b class="caret"></b></a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li>
+<a class="nav-link pr-0 mr-0" href="https://xchange.me/users/login">
+Login
+</a>
+</li>
+<li>
+<a class="nav-link pr-0 mr-0" href="https://xchange.me/users/register">
+Register
+</a>
+ </li>
+<li>
+<a class="nav-link pr-0 mr-0" href="/affiliate-program">Details</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div aria-live="polite" aria-atomic="true" id="toast-wrapper">
+</div>
+</header>
+<main class="home flex-fill">
+<div class="container h-100 position-relative">
+<div class="row h-100 justify-content-between align-items-center">
+<div class="col-sm-12 col-lg-6 mr-0 mr-sm-5">
+<h1>Exchange cryptocurrency</h1>
+<h2>hassle-free</h2>
+</div>
+<div class="col">
+<form method="GET" action="https://xchange.me/exchange/create">
+<div class="exchanger">
+<label for="from_amount">You send</label>
+<div class="input-group">
+<input name="from_amount" type="number" step="0.00000001" min="0" value="" required id="from_amount" class="form-control" placeholder="0">
+<div class="input-group-append">
+<div class="input-group-append">
+<label for="from_currency" class="sr-only">From currency</label>
+<select class="selectpicker" data-style="btn btn-coin" data-width="fit" data-live-search="true" name="from_currency" id="from_currency">
+<option value="btc" selected>
+BTC
+</option>
+<option value="dash">
+DASH
+</option>
+<option value="eth">
+ETH
+</option>
+<option value="kmd">
+KMD
+</option>
+<option value="ltc">
+LTC
+</option>
+<option value="xmr">
+XMR
+</option>
+<option value="zec">
+ZEC (t-addr)
+</option>
+<option value="zec-private">
+ZEC (z-addr)
+ </option>
+</select>
+<noscript>
+                                            <label for="from_currency" class="sr-only">From currency</label>
+                                            <select style="background: none; border: 0; color: #ffffff; font-weight: 500; text-align-last: right;"
+                                                    name="from_currency" id="from_currency">
+                                                                                                    <option value="btc" style="background: #212529; text-align: right"
+                                                             selected >
+                                                        BTC
+                                                    </option>
+                                                                                                    <option value="dash" style="background: #212529; text-align: right"
+                                                            >
+                                                        DASH
+                                                    </option>
+                                                                                                    <option value="eth" style="background: #212529; text-align: right"
+                                                            >
+                                                        ETH
+                                                    </option>
+                                                                                                    <option value="kmd" style="background: #212529; text-align: right"
+                                                            >
+                                                        KMD
+                                                    </option>
+                                                                                                    <option value="ltc" style="background: #212529; text-align: right"
+                                                            >
+                                                        LTC
+                                                    </option>
+                                                                                                    <option value="xmr" style="background: #212529; text-align: right"
+                                                            >
+                                                        XMR
+                                                    </option>
+                                                                                                    <option value="zec" style="background: #212529; text-align: right"
+                                                            >
+                                                        ZEC (t-addr)
+                                                    </option>
+                                                                                                    <option value="zec-private" style="background: #212529; text-align: right"
+                                                            >
+                                                        ZEC (z-addr)
+                                                    </option>
+                                                                                            </select>
+                                        </noscript>
+</div>
+</div>
+</div>
+<div class="rate">
+<p id="rate">
+</p>
+<button formaction="https://xchange.me/exchange/estimate" formmethod="GET" data-toggle="tooltip" title="Click to check if exchanging selected pair is possible or to check your exchange rate">
+<img src="/img/ico-transparency.png" />
+</button>
+</div>
+<label for="to_amount">You receive</label>
+<div class="input-group">
+<div class="form-control">
+<span class="estimate" id="to_amount"></span>
+</div>
+<div class="input-group-append">
+<label for="to_currency" class="sr-only">To currency</label>
+<select name="to_currency" class="selectpicker" data-style="btn btn-coin" data-width="fit" id="to_currency" data-live-search="true">
+<option value="1earth">
+1EARTH
+</option>
+<option value="ada">
+ADA
+</option>
+<option value="adx">
+ADX
+</option>
+<option value="aeon">
+AEON
+</option>
+<option value="agix">
+AGIX
+</option>
+<option value="aion">
+AION
+</option>
+<option value="akro">
+AKRO
+</option>
+<option value="algo">
+ALGO
+</option>
+<option value="amb">
+AMB
+</option>
+<option value="amp">
+AMP
+</option>
+<option value="ankr">
+ANKR
+</option>
+<option value="ant">
+ANT
+</option>
+<option value="ardr">
+ARDR
+</option>
+<option value="arker">
+ARKER
+</option>
+<option value="atom">
+ ATOM
+</option>
+<option value="ava">
+AVA
+</option>
+<option value="band">
+BAND
+</option>
+<option value="bat">
+BAT
+</option>
+<option value="bch">
+BCH
+</option>
+<option value="blz">
+BLZ
+</option>
+<option value="bnb">
+BNB
+</option>
+<option value="bnt">
+BNT
+</option>
+<option value="btc">
+BTC
+</option>
+<option value="bts">
+BTS
+</option>
+<option value="btt">
+BTT
+</option>
+<option value="busd">
+BUSD
+</option>
+<option value="celr">
+CELR
+</option>
+<option value="chmb">
+CHMB
+</option>
+<option value="chr">
+CHR
+</option>
+<option value="chz">
+CHZ
+</option>
+<option value="ckb">
+CKB
+</option>
+<option value="clh">
+CLH
+</option>
+<option value="cocos">
+COCOS
+</option>
+<option value="cos">
+COS
+</option>
+<option value="coti">
+COTI
+</option>
+<option value="credi">
+CREDI
+</option>
+<option value="cro">
+CRO
+</option>
+<option value="ctsi">
+CTSI
+</option>
+<option value="cvc">
+CVC
+</option>
+<option value="cweb">
+CWEB
+</option>
+<option value="dai">
+DAI
+</option>
+<option value="dash">
+DASH
+</option>
+<option value="data">
+DATA
+</option>
+<option value="dcr">
+DCR
+</option>
+<option value="dgb">
+DGB
+</option>
+<option value="dock">
+DOCK
+</option>
+<option value="doge">
+DOGE
+</option>
+<option value="dot">
+DOT
+</option>
+<option value="dpr">
+DPR
+</option>
+<option value="drgn">
+DRGN
+</option>
+<option value="dusk">
+DUSK
+</option>
+<option value="enj">
+ENJ
+</option>
+<option value="ens">
+ENS
+</option>
+ <option value="eos">
+EOS
+</option>
+<option value="epik">
+EPIK
+</option>
+<option value="etc">
+ETC
+</option>
+<option value="eth">
+ETH
+</option>
+<option value="ftm">
+FTM
+</option>
+<option value="ftt">
+FTT
+</option>
+<option value="fx">
+FX
+</option>
+<option value="gafi">
+GAFI
+</option>
+<option value="gas">
+GAS
+</option>
+<option value="geeq">
+GEEQ
+</option>
+<option value="ggg">
+GGG
+</option>
+<option value="gno">
+GNO
+</option>
+<option value="gnt">
+GNT
+</option>
+<option value="go">
+GO
+</option>
+<option value="gods">
+GODS
+</option>
+<option value="grs">
+GRS
+</option>
+<option value="hard">
+HARD
+</option>
+<option value="hbar">
+HBAR
+</option>
+<option value="icx">
+ICX
+</option>
+<option value="ila">
+ILA
+</option>
+<option value="imx">
+IMX
+</option>
+<option value="iost">
+IOST
+</option>
+<option value="iota">
+IOTA
+</option>
+<option value="iotx">
+IOTX
+</option>
+<option value="kava">
+KAVA
+</option>
+<option value="kmd">
+KMD
+</option>
+<option value="knc">
+KNC
+</option>
+<option value="lbc">
+LBC
+</option>
+<option value="link">
+LINK
+</option>
+<option value="lrc">
+LRC
+</option>
+<option value="lsk">
+LSK
+</option>
+<option value="ltc">
+LTC
+</option>
+<option value="lto">
+LTO
+</option>
+<option value="mana">
+MANA
+</option>
+<option value="matic">
+MATIC
+</option>
+<option value="mbl">
+MBL
+</option>
+<option value="mdt">
+MDT
+</option>
+<option value="mkr">
+MKR
+</option>
+<option value="mnet">
+ MNET
+</option>
+<option value="mnw">
+MNW
+</option>
+<option value="moni">
+MONI
+</option>
+<option value="neo">
+NEO
+</option>
+<option value="ngc">
+NGC
+</option>
+<option value="num">
+NUM
+</option>
+<option value="ocean">
+OCEAN
+</option>
+<option value="orc">
+ORC
+</option>
+<option value="pbr">
+PBR
+</option>
+<option value="pel">
+PEL
+</option>
+<option value="people">
+PEOPLE
+</option>
+<option value="pivx">
+PIVX
+</option>
+<option value="pla">
+PLA
+</option>
+<option value="polc">
+POLC
+</option>
+<option value="powr">
+POWR
+</option>
+<option value="ppt">
+PPT
+</option>
+<option value="qkc">
+QKC
+</option>
+<option value="qnt">
+QNT
+</option>
+<option value="qtum">
+QTUM
+</option>
+<option value="rep">
+REP
+ </option>
+<option value="req">
+REQ
+</option>
+<option value="rlc">
+RLC
+</option>
+<option value="rvn">
+RVN
+</option>
+<option value="sc">
+SC
+</option>
+<option value="snt">
+SNT
+</option>
+<option value="snx">
+SNX
+</option>
+<option value="sol">
+SOL
+</option>
+<option value="solve">
+SOLVE
+</option>
+<option value="sos">
+SOS
+</option>
+<option value="steem">
+STEEM
+</option>
+<option value="storj">
+STORJ
+</option>
+<option value="stx">
+STX
+</option>
+<option value="sxp">
+SXP
+</option>
+<option value="sys">
+SYS
+</option>
+<option value="tfuel">
+TFUEL
+</option>
+<option value="theta">
+THETA
+</option>
+<option value="tomo">
+TOMO
+</option>
+<option value="trac">
+TRAC
+</option>
+<option value="trx">
+TRX
+</option>
+ <option value="tusd">
+TUSD
+</option>
+<option value="ufo">
+UFO
+</option>
+<option value="unb">
+UNB
+</option>
+<option value="unic">
+UNIC
+</option>
+<option value="usdc">
+USDC
+</option>
+<option value="usdt">
+USDT
+</option>
+<option value="vet">
+VET
+</option>
+<option value="via">
+VIA
+</option>
+<option value="vr">
+VR
+</option>
+<option value="vra">
+VRA
+</option>
+<option value="vxv">
+VXV
+</option>
+<option value="wan">
+WAN
+</option>
+<option value="waves">
+WAVES
+</option>
+<option value="waxp">
+WAXP
+</option>
+<option value="whale">
+WHALE
+</option>
+<option value="win">
+WIN
+</option>
+<option value="wrx">
+WRX
+</option>
+<option value="wxt">
+WXT
+</option>
+<option value="xcp">
+XCP
+</option>
+ <option value="xem">
+XEM
+</option>
+<option value="xhv">
+XHV
+</option>
+<option value="xlm">
+XLM
+</option>
+<option value="xmr">
+XMR
+</option>
+<option value="xrp">
+XRP
+</option>
+<option value="xtm">
+XTM
+</option>
+<option value="xtz">
+XTZ
+</option>
+<option value="zec">
+ZEC
+</option>
+<option value="zen">
+ZEN
+</option>
+<option value="zil">
+ZIL
+</option>
+<option value="zrx">
+ZRX
+</option>
+</select>
+<noscript>
+                                        <label for="to_currency" class="sr-only">To currency</label>
+                                        <select id="to_currency" name="to_currency" style="background: none; border: 0; color: #ffffff; font-weight: 500; text-align-last: right;">
+                                                                                                                                        <option value="1earth" style="background: #212529;" >
+                                                    1EARTH
+                                                </option>
+                                                                                            <option value="ada" style="background: #212529;" >
+                                                    ADA
+                                                </option>
+                                                                                            <option value="adx" style="background: #212529;" >
+                                                    ADX
+                                                </option>
+                                                                                            <option value="aeon" style="background: #212529;" >
+                                                    AEON
+                                                </option>
+                                                                                            <option value="agix" style="background: #212529;" >
+                                                    AGIX
+                                                </option>
+                                                                                            <option value="aion" style="background: #212529;" >
+                                                    AION
+                                                </option>
+                                                                                            <option value="akro" style="background: #212529;" >
+                                                    AKRO
+                                                </option>
+                                                                                            <option value="algo" style="background: #212529;" >
+                                                    ALGO
+                                                </option>
+                                                                                            <option value="amb" style="background: #212529;" >
+                                                    AMB
+                                                </option>
+                                                                                            <option value="amp" style="background: #212529;" >
+                                                    AMP
+                                                </option>
+                                                                                            <option value="ankr" style="background: #212529;" >
+                                                    ANKR
+                                                </option>
+                                                                                            <option value="ant" style="background: #212529;" >
+                                                    ANT
+                                                </option>
+                                                                                            <option value="ardr" style="background: #212529;" >
+                                                    ARDR
+                                                </option>
+                                                                                            <option value="arker" style="background: #212529;" >
+                                                    ARKER
+                                                </option>
+                                                                                            <option value="atom" style="background: #212529;" >
+                                                    ATOM
+                                                </option>
+                                                                                            <option value="ava" style="background: #212529;" >
+                                                    AVA
+                                                </option>
+                                                                                            <option value="band" style="background: #212529;" >
+                                                    BAND
+                                                </option>
+                                                                                            <option value="bat" style="background: #212529;" >
+                                                    BAT
+                                                </option>
+                                                                                            <option value="bch" style="background: #212529;" >
+                                                    BCH
+                                                </option>
+                                                                                            <option value="blz" style="background: #212529;" >
+                                                    BLZ
+                                                </option>
+                                                                                            <option value="bnb" style="background: #212529;" >
+                                                    BNB
+                                                </option>
+                                                                                            <option value="bnt" style="background: #212529;" >
+                                                    BNT
+                                                </option>
+                                                                                            <option value="btc" style="background: #212529;" >
+                                                    BTC
+                                                </option>
+                                                                                            <option value="bts" style="background: #212529;" >
+                                                    BTS
+                                                </option>
+                                                                                            <option value="btt" style="background: #212529;" >
+                                                    BTT
+                                                </option>
+                                                                                            <option value="busd" style="background: #212529;" >
+                                                    BUSD
+                                                </option>
+                                                                                            <option value="celr" style="background: #212529;" >
+                                                    CELR
+                                                </option>
+                                                                                            <option value="chmb" style="background: #212529;" >
+                                                    CHMB
+                                                </option>
+                                                                                            <option value="chr" style="background: #212529;" >
+                                                    CHR
+                                                </option>
+                                                                                            <option value="chz" style="background: #212529;" >
+                                                    CHZ
+                                                </option>
+                                                                                            <option value="ckb" style="background: #212529;" >
+                                                    CKB
+                                                </option>
+                                                                                            <option value="clh" style="background: #212529;" >
+                                                    CLH
+                                                </option>
+                                                                                            <option value="cocos" style="background: #212529;" >
+                                                    COCOS
+                                                </option>
+                                                                                            <option value="cos" style="background: #212529;" >
+                                                    COS
+                                                </option>
+                                                                                            <option value="coti" style="background: #212529;" >
+                                                    COTI
+                                                </option>
+                                                                                            <option value="credi" style="background: #212529;" >
+                                                    CREDI
+                                                </option>
+                                                                                            <option value="cro" style="background: #212529;" >
+                                                    CRO
+                                                </option>
+                                                                                            <option value="ctsi" style="background: #212529;" >
+                                                    CTSI
+                                                </option>
+                                                                                            <option value="cvc" style="background: #212529;" >
+                                                    CVC
+                                                </option>
+                                                                                            <option value="cweb" style="background: #212529;" >
+                                                    CWEB
+                                                </option>
+                                                                                            <option value="dai" style="background: #212529;" >
+                                                    DAI
+                                                </option>
+                                                                                            <option value="dash" style="background: #212529;" >
+                                                    DASH
+                                                </option>
+                                                                                            <option value="data" style="background: #212529;" >
+                                                    DATA
+                                                </option>
+                                                                                            <option value="dcr" style="background: #212529;" >
+                                                    DCR
+                                                </option>
+                                                                                            <option value="dgb" style="background: #212529;" >
+                                                    DGB
+                                                </option>
+                                                                                            <option value="dock" style="background: #212529;" >
+                                                    DOCK
+                                                </option>
+                                                                                            <option value="doge" style="background: #212529;" >
+                                                    DOGE
+                                                </option>
+                                                                                            <option value="dot" style="background: #212529;" >
+                                                    DOT
+                                                </option>
+                                                                                            <option value="dpr" style="background: #212529;" >
+                                                    DPR
+                                                </option>
+                                                                                            <option value="drgn" style="background: #212529;" >
+                                                    DRGN
+                                                </option>
+                                                                                            <option value="dusk" style="background: #212529;" >
+                                                    DUSK
+                                                </option>
+                                                                                            <option value="enj" style="background: #212529;" >
+                                                    ENJ
+                                                </option>
+                                                                                            <option value="ens" style="background: #212529;" >
+                                                    ENS
+                                                </option>
+                                                                                            <option value="eos" style="background: #212529;" >
+                                                    EOS
+                                                </option>
+                                                                                            <option value="epik" style="background: #212529;" >
+                                                    EPIK
+                                                </option>
+                                                                                            <option value="etc" style="background: #212529;" >
+                                                    ETC
+                                                </option>
+                                                                                            <option value="eth" style="background: #212529;" >
+                                                    ETH
+                                                </option>
+                                                                                            <option value="ftm" style="background: #212529;" >
+                                                    FTM
+                                                </option>
+                                                                                            <option value="ftt" style="background: #212529;" >
+                                                    FTT
+                                                </option>
+                                                                                            <option value="fx" style="background: #212529;" >
+                                                    FX
+                                                </option>
+                                                                                            <option value="gafi" style="background: #212529;" >
+                                                    GAFI
+                                                </option>
+                                                                                            <option value="gas" style="background: #212529;" >
+                                                    GAS
+                                                </option>
+                                                                                            <option value="geeq" style="background: #212529;" >
+                                                    GEEQ
+                                                </option>
+                                                                                            <option value="ggg" style="background: #212529;" >
+                                                    GGG
+                                                </option>
+                                                                                            <option value="gno" style="background: #212529;" >
+                                                    GNO
+                                                </option>
+                                                                                            <option value="gnt" style="background: #212529;" >
+                                                    GNT
+                                                </option>
+                                                                                            <option value="go" style="background: #212529;" >
+                                                    GO
+                                                </option>
+                                                                                            <option value="gods" style="background: #212529;" >
+                                                    GODS
+                                                </option>
+                                                                                            <option value="grs" style="background: #212529;" >
+                                                    GRS
+                                                </option>
+                                                                                            <option value="hard" style="background: #212529;" >
+                                                    HARD
+                                                </option>
+                                                                                            <option value="hbar" style="background: #212529;" >
+                                                    HBAR
+                                                </option>
+                                                                                            <option value="icx" style="background: #212529;" >
+                                                    ICX
+                                                </option>
+                                                                                            <option value="ila" style="background: #212529;" >
+                                                    ILA
+                                                </option>
+                                                                                            <option value="imx" style="background: #212529;" >
+                                                    IMX
+                                                </option>
+                                                                                            <option value="iost" style="background: #212529;" >
+                                                    IOST
+                                                </option>
+                                                                                            <option value="iota" style="background: #212529;" >
+                                                    IOTA
+                                                </option>
+                                                                                            <option value="iotx" style="background: #212529;" >
+                                                    IOTX
+                                                </option>
+                                                                                            <option value="kava" style="background: #212529;" >
+                                                    KAVA
+                                                </option>
+                                                                                            <option value="kmd" style="background: #212529;" >
+                                                    KMD
+                                                </option>
+                                                                                            <option value="knc" style="background: #212529;" >
+                                                    KNC
+                                                </option>
+                                                                                            <option value="lbc" style="background: #212529;" >
+                                                    LBC
+                                                </option>
+                                                                                            <option value="link" style="background: #212529;" >
+                                                    LINK
+                                                </option>
+                                                                                            <option value="lrc" style="background: #212529;" >
+                                                    LRC
+                                                </option>
+                                                                                            <option value="lsk" style="background: #212529;" >
+                                                    LSK
+                                                </option>
+                                                                                            <option value="ltc" style="background: #212529;" >
+                                                    LTC
+                                                </option>
+                                                                                            <option value="lto" style="background: #212529;" >
+                                                    LTO
+                                                </option>
+                                                                                            <option value="mana" style="background: #212529;" >
+                                                    MANA
+                                                </option>
+                                                                                            <option value="matic" style="background: #212529;" >
+                                                    MATIC
+                                                </option>
+                                                                                            <option value="mbl" style="background: #212529;" >
+                                                    MBL
+                                                </option>
+                                                                                            <option value="mdt" style="background: #212529;" >
+                                                    MDT
+                                                </option>
+                                                                                            <option value="mkr" style="background: #212529;" >
+                                                    MKR
+                                                </option>
+                                                                                            <option value="mnet" style="background: #212529;" >
+                                                    MNET
+                                                </option>
+                                                                                            <option value="mnw" style="background: #212529;" >
+                                                    MNW
+                                                </option>
+                                                                                            <option value="moni" style="background: #212529;" >
+                                                    MONI
+                                                </option>
+                                                                                            <option value="neo" style="background: #212529;" >
+                                                    NEO
+                                                </option>
+                                                                                            <option value="ngc" style="background: #212529;" >
+                                                    NGC
+                                                </option>
+                                                                                            <option value="num" style="background: #212529;" >
+                                                    NUM
+                                                </option>
+                                                                                            <option value="ocean" style="background: #212529;" >
+                                                    OCEAN
+                                                </option>
+                                                                                            <option value="orc" style="background: #212529;" >
+                                                    ORC
+                                                </option>
+                                                                                            <option value="pbr" style="background: #212529;" >
+                                                    PBR
+                                                </option>
+                                                                                            <option value="pel" style="background: #212529;" >
+                                                    PEL
+                                                </option>
+                                                                                            <option value="people" style="background: #212529;" >
+                                                    PEOPLE
+                                                </option>
+                                                                                            <option value="pivx" style="background: #212529;" >
+                                                    PIVX
+                                                </option>
+                                                                                            <option value="pla" style="background: #212529;" >
+                                                    PLA
+                                                </option>
+                                                                                            <option value="polc" style="background: #212529;" >
+                                                    POLC
+                                                </option>
+                                                                                            <option value="powr" style="background: #212529;" >
+                                                    POWR
+                                                </option>
+                                                                                            <option value="ppt" style="background: #212529;" >
+                                                    PPT
+                                                </option>
+                                                                                            <option value="qkc" style="background: #212529;" >
+                                                    QKC
+                                                </option>
+                                                                                            <option value="qnt" style="background: #212529;" >
+                                                    QNT
+                                                </option>
+                                                                                            <option value="qtum" style="background: #212529;" >
+                                                    QTUM
+                                                </option>
+                                                                                            <option value="rep" style="background: #212529;" >
+                                                    REP
+                                                </option>
+                                                                                            <option value="req" style="background: #212529;" >
+                                                    REQ
+                                                </option>
+                                                                                            <option value="rlc" style="background: #212529;" >
+                                                    RLC
+                                                </option>
+                                                                                            <option value="rvn" style="background: #212529;" >
+                                                    RVN
+                                                </option>
+                                                                                            <option value="sc" style="background: #212529;" >
+                                                    SC
+                                                </option>
+                                                                                            <option value="snt" style="background: #212529;" >
+                                                    SNT
+                                                </option>
+                                                                                            <option value="snx" style="background: #212529;" >
+                                                    SNX
+                                                </option>
+                                                                                            <option value="sol" style="background: #212529;" >
+                                                    SOL
+                                                </option>
+                                                                                            <option value="solve" style="background: #212529;" >
+                                                    SOLVE
+                                                </option>
+                                                                                            <option value="sos" style="background: #212529;" >
+                                                    SOS
+                                                </option>
+                                                                                            <option value="steem" style="background: #212529;" >
+                                                    STEEM
+                                                </option>
+                                                                                            <option value="storj" style="background: #212529;" >
+                                                    STORJ
+                                                </option>
+                                                                                            <option value="stx" style="background: #212529;" >
+                                                    STX
+                                                </option>
+                                                                                            <option value="sxp" style="background: #212529;" >
+                                                    SXP
+                                                </option>
+                                                                                            <option value="sys" style="background: #212529;" >
+                                                    SYS
+                                                </option>
+                                                                                            <option value="tfuel" style="background: #212529;" >
+                                                    TFUEL
+                                                </option>
+                                                                                            <option value="theta" style="background: #212529;" >
+                                                    THETA
+                                                </option>
+                                                                                            <option value="tomo" style="background: #212529;" >
+                                                    TOMO
+                                                </option>
+                                                                                            <option value="trac" style="background: #212529;" >
+                                                    TRAC
+                                                </option>
+                                                                                            <option value="trx" style="background: #212529;" >
+                                                    TRX
+                                                </option>
+                                                                                            <option value="tusd" style="background: #212529;" >
+                                                    TUSD
+                                                </option>
+                                                                                            <option value="ufo" style="background: #212529;" >
+                                                    UFO
+                                                </option>
+                                                                                            <option value="unb" style="background: #212529;" >
+                                                    UNB
+                                                </option>
+                                                                                            <option value="unic" style="background: #212529;" >
+                                                    UNIC
+                                                </option>
+                                                                                            <option value="usdc" style="background: #212529;" >
+                                                    USDC
+                                                </option>
+                                                                                            <option value="usdt" style="background: #212529;" >
+                                                    USDT
+                                                </option>
+                                                                                            <option value="vet" style="background: #212529;" >
+                                                    VET
+                                                </option>
+                                                                                            <option value="via" style="background: #212529;" >
+                                                    VIA
+                                                </option>
+                                                                                            <option value="vr" style="background: #212529;" >
+                                                    VR
+                                                </option>
+                                                                                            <option value="vra" style="background: #212529;" >
+                                                    VRA
+                                                </option>
+                                                                                            <option value="vxv" style="background: #212529;" >
+                                                    VXV
+                                                </option>
+                                                                                            <option value="wan" style="background: #212529;" >
+                                                    WAN
+                                                </option>
+                                                                                            <option value="waves" style="background: #212529;" >
+                                                    WAVES
+                                                </option>
+                                                                                            <option value="waxp" style="background: #212529;" >
+                                                    WAXP
+                                                </option>
+                                                                                            <option value="whale" style="background: #212529;" >
+                                                    WHALE
+                                                </option>
+                                                                                            <option value="win" style="background: #212529;" >
+                                                    WIN
+                                                </option>
+                                                                                            <option value="wrx" style="background: #212529;" >
+                                                    WRX
+                                                </option>
+                                                                                            <option value="wxt" style="background: #212529;" >
+                                                    WXT
+                                                </option>
+                                                                                            <option value="xcp" style="background: #212529;" >
+                                                    XCP
+                                                </option>
+                                                                                            <option value="xem" style="background: #212529;" >
+                                                    XEM
+                                                </option>
+                                                                                            <option value="xhv" style="background: #212529;" >
+                                                    XHV
+                                                </option>
+                                                                                            <option value="xlm" style="background: #212529;" >
+                                                    XLM
+                                                </option>
+                                                                                            <option value="xmr" style="background: #212529;" >
+                                                    XMR
+                                                </option>
+                                                                                            <option value="xrp" style="background: #212529;" >
+                                                    XRP
+                                                </option>
+                                                                                            <option value="xtm" style="background: #212529;" >
+                                                    XTM
+                                                </option>
+                                                                                            <option value="xtz" style="background: #212529;" >
+                                                    XTZ
+                                                </option>
+                                                                                            <option value="zec" style="background: #212529;" >
+                                                    ZEC
+                                                </option>
+                                                                                            <option value="zen" style="background: #212529;" >
+                                                    ZEN
+                                                </option>
+                                                                                            <option value="zil" style="background: #212529;" >
+                                                    ZIL
+                                                </option>
+                                                                                            <option value="zrx" style="background: #212529;" >
+                                                    ZRX
+                                                </option>
+                                                                                    </select>
+                                    </noscript>
+</div>
+</div>
+<div class="input-group">
+<div class="feeSelect align-items-center">
+<div class="mr-auto">
+<label for="feeCurrency" class="mb-0">Pay fee in</label>
+</div>
+<div>
+<select name="fee_currency" class="fee-select" id="feeCurrency">
+<option value="">Taken from exchange amount (default)</option>
+<option value="btc">
+Paid separately in BTC
+</option>
+<option value="eth">
+Paid separately in ETH
+</option>
+<option value="dash">
+Paid separately in DASH
+</option>
+<option value="zec">
+Paid separately in ZEC
+</option>
+<option value="xmr">
+Paid separately in XMR
+</option>
+<option value="ltc">
+Paid separately in LTC
+</option>
+<option value="kmd">
+Paid separately in KMD
+</option>
+<option value="excc">
+Paid separately in EXCC
+</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<button class="exchange-button">Exchange Now <img src="/img/arrowright.png" alt="&rarr;" />
+</button>
+</form>
+</div>
+</div>
+</div>
+</main>
+<footer class="home mt-5">
+<div class="container">
+<div class="row steps pb-5 pt-5">
+<div class="col-sm-12 col-md-3">
+<img src="/img/001-anonymous.png" alt="Cryptocurrency exchange">
+<h3>Convinient - minimal data collecion, accountless experience, simply choose the assets and exchange them.</h3>
+</div>
+<div class="col-sm-12 col-md-3">
+<img src="/img/002-rocket.png" alt="Buy bitcoin">
+<h3>Fast - all exchanges are done within minutes or hours.</h3>
+</div>
+<div class="col-sm-12 col-md-3">
+<img src="/img/003-balance.png" alt="Sell bitcoin">
+<h3>Cheap - one and fixed fee for all, very competitive rates among crypto exchangers.</h3>
+</div>
+<div class="col-sm-12 col-md-3">
+<img src="/img/004-bitcoins.png" alt="Exchange crypto">
+<h3>High limits - no need for split transactions. Exchange as much as you want in a single trade.</h3>
+</div>
+</div>
+</div>
+</footer>
+</section>
+<section class="section home-wrapper d-flex flex-column section">
+<header class="details">
+<div class="container h-100">
+<div class="row h-100">
+<div class="col-md-6">
+<h1>Keep personal information to yourself</h1>
+<p>Users, which are censored by their governments can try to use the TOR network.
+Our free Javascript onion mirror can be reached at
+<a class="onion" data-toggle="modal" data-target="#onionModal">http://xmxmrjoqo63c5notr2ds2t3pdpsg4ysqqe6e6uu2pycecmjs4ekzpmyd.onion</a>.
+ We honor every user’s right to privacy and refrain from hoarding any personal information, just bear in mind, that all assets that enter
+our exchange may be subject to review if the transaction is deemed anyhow suspicious by our compliance framework.
+</div>
+<div class="col-md-6">
+<h1>xChange.me CLI</h1>
+<p>We provide fully open API, therefore it is possible to make exchanges using terminal only. We strongly recommend systems like Tails or Whonix Workstation, which are designed to provide you the best anonymity.</p>
+</div>
+</div>
+</div>
+</header>
+<main class="data flex-fill">
+<div class="container h-100">
+<div class="row h-100 justify-content-between">
+<div class="col-12 d-none d-sm-block">
+<div class="divider"></div>
+</div>
+<div class="col-lg-4 col-sm-12 mt-1">
+<div class="card h-100">
+<div class="card-body">
+<h3 class="card-title">Superb support</h3>
+<p>We do our best to help our customers within 12 hours timeframe. Including weekends and holidays. The fastest and most convenient way of reaching our support is to email at support[at]xchange[dot]me.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-12 mt-1">
+<div class="card h-100">
+<div class="card-body">
+<h3 class="card-title">Experience</h3>
+<p>Over five years on the market without single complaint and thousands of well-served customers. Join the community on Telegram and meet our dedicated and the best community.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-12 mt-1">
+<div class="card h-100">
+<div class="card-body">
+<h3 class="card-title">Privacy is the key</h3>
+<p>Protecting one&#039;s privacy is one of the most important aspects of online activity, as most websites try to harvest as much user data as possible. We are proud to say that xChange.me doesn&#039;t collect any personal information without informed consent, or screen our users for any KYC-related data. We gather only the absolute minimum info to ensure the effective work of the exchanger.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</section>
+<script type="965e2c879c05a212bc1b4217-text/javascript">
+        function addError(error) {
+            let html = '<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false"> <div class="toast-header"> <strong class="mr-auto">Error</strong> <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div> <div class="toast-body">' + error +'</div></div>';
+            document.getElementById('toast-wrapper').innerHTML += html;
+            $('.toast').toast('show');
+        }
+
+        function getSelectedOption(select) {
+            return select.options[select.selectedIndex].value;
+        }
+
+        function estimate() {
+            let dst = document.getElementById('to_amount');
+            let amount = document.getElementById('from_amount').value;
+            let from = getSelectedOption(document.getElementById('from_currency'));
+            let to = getSelectedOption(document.getElementById('to_currency'));
+
+            if (!amount || !from || !to) {
+                return;
+            }
+
+            dst.classList.add('loader');
+            dst.value = '';
+            document.getElementById('rate').innerHTML = '';
+
+            let url = '/api/v1/exchange/estimate?from_currency=' + from + '&to_currency='+ to + '&amount=' + amount;
+            const myRequest = new Request(url, {
+                method: 'GET',
+                headers: new Headers({'Accept': 'application/json',}),
+            });
+            fetch(myRequest).then((data) => {
+               dst.classList.remove('loader');
+               if (!data.ok) {
+                   addError('Currently there is no possibility to exchange ' + from.toUpperCase() + ' to ' + to.toUpperCase() +'. Please try again later.');
+                   return;
+               }
+               data.json().then((estimate) => {
+                   dst.innerHTML = estimate.estimate;
+                   document.getElementById('rate').innerHTML = '1&nbsp;' + from.toUpperCase() + '&nbsp;=&nbsp;' + estimate.rate + '&nbsp;' + to.toUpperCase();
+               });
+            });
+
+        }
+        let input = document.getElementById('from_amount');
+        let timeout = null;
+        input.addEventListener('keyup', function (e) {
+            clearTimeout(timeout);
+            timeout = setTimeout(function () {
+                estimate();
+            }, 1000);
+        });
+
+        let fromInput = document.getElementById('from_currency');
+        let toInput = document.getElementById('to_currency');
+        fromInput.addEventListener('change', estimate);
+        toInput.addEventListener('change', estimate);
+    </script>
+<footer class="data footer mt-5 mt-md-0">
+<div class="container">
+<div class="row d-flex justify-content-between text-center text-sm-left">
+<div class="col-lg-3 col-sm-12 mb-3 mb-sm-0 text-center text-sm-left">
+<img src="/img/logo_clear.png" />
+</div>
+<div class="col-md-2">
+<h3>Informations</h3>
+<ul class="list-unstyled">
+<li><a href="/how-it-works">How it works</a></li>
+<li><a href="/faq">FAQ</a></li>
+<li><a href="/affiliate-program" target="_blank">Affiliate Program</a></li>
+<li><a href="https://api.xchange.me">API</a></li>
+<li><a href="/cdn-cgi/l/email-protection#24575154544b5650645c474c454a43410a4941" target="_blank">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-md-2">
+<h3>Legal</h3>
+<ul class="list-unstyled">
+<li><a href="/terms-of-service">Terms of Service</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/fees">Fees &amp; Limits</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h3>Social Media</h3>
+<ul class="list-unstyled">
+<li><a href="https://twitter.com/xchange_me_" target="_blank">Twitter</a></li>
+<li><a href="https://t.me/xchange_me" target="_blank">Telegram</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<div class="modal fade" id="onionModal" tabindex="-1" role="dialog" aria-labelledby="onionModalTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="onionModalTitle">xChange.me Onion Mirror</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+If you want to exchange crypto even more anonymously, use our Tor network mirror.
+It is available at the address http://xmxmrjoqo63c5notr2ds2t3pdpsg4ysqqe6e6uu2pycecmjs4ekzpmyd.onion and it requires Tor Browser to access it.
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery-3.4.1.min.js" type="965e2c879c05a212bc1b4217-text/javascript"></script>
+<script src="/js/jquery.scrollify.js" type="965e2c879c05a212bc1b4217-text/javascript"></script>
+<script src="/js/popper.min.js" type="965e2c879c05a212bc1b4217-text/javascript"></script>
+<script src="/js/bootstrap.min.js" type="965e2c879c05a212bc1b4217-text/javascript"></script>
+<script src="/js/bootstrap-select.min.js" type="965e2c879c05a212bc1b4217-text/javascript"></script>
+<script type="965e2c879c05a212bc1b4217-text/javascript">
+        $(document).ready(function () {
+            $('.toast').toast('show');
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+</section>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="965e2c879c05a212bc1b4217-|49" defer=""></script></body>
+</html>
